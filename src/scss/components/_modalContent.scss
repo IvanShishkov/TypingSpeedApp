@@ -1,0 +1,107 @@
+@import '../variables';
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 10px;
+
+  .congrat {
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: $reload;
+  }
+
+  .redBlock {
+    display: flex;
+    flex-direction: row;
+    background-color: $reload;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .informationBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+
+      .wrapperBlock {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+
+        .infoIcons {
+          font-size: 75px;
+          margin-right: 10px;
+          color: $white;
+        }
+
+        .titleBlock {
+          font-size: 21px;
+          color: $white;
+        }
+
+        .block {
+          display: flex;
+          flex-direction: row;
+          color: $background;
+
+          .numberBlock {
+            font-size: 50px;
+          }
+
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .rightBlock {
+      color: $white;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .buttonBlock {
+    display: flex;
+    justify-content: flex-end;
+
+    .tip {
+      font-size: 11px;
+    }
+
+    .retry {
+      display: flex;
+      padding: 10px;
+      justify-content: center;
+      width: 30%;
+      margin-left: 10px;
+      border-radius: 10px;
+      font-size: 15px;
+      background-color: $start;
+      color: $white;
+      cursor: pointer;
+      border: 2px solid $reload;
+    }
+
+    .retry:hover {
+      box-shadow: 0 0 5px $reload;
+    }
+
+    .retry:active {
+      background-color: $correct;
+    }
+  }
+}

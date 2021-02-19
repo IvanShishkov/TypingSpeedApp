@@ -1,0 +1,20 @@
+@import '../variables';
+
+.speed {
+  margin-bottom: 20%;
+
+  .topBlock {
+    font-size: 25px;
+  }
+
+  .bottomBlock {
+    span {
+      color: $background;
+      font-size: 10px;
+    }
+
+    .cpm {
+      font-size: 20px;
+    }
+  }
+}

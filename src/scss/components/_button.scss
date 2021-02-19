@@ -1,0 +1,54 @@
+@import '../variables';
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+
+  .button {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: $white;
+    cursor: pointer;
+    border: 2px solid $reload;
+
+    .buttonIcons {
+      margin-left: 5px;
+      font-size: 10px;
+    }
+  }
+
+  .button.start {
+    background-color: $start;
+    width: 80%;
+  }
+
+  .button.start:hover {
+    box-shadow: 0 0 5px $reload;
+  }
+
+  .button.start:active {
+    background-color: $correct;
+  }
+
+  .button.reload {
+    background-color: $error;
+    width: 100%;
+  }
+
+  .button.reload:hover {
+    box-shadow: 0 0 5px $error;
+  }
+
+  .button.reload:active {
+    background-color: $reload;
+  }
+
+  .langSwitcher {
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+  }
+}

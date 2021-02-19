@@ -1,0 +1,21 @@
+@import '../variables';
+
+.information {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  .mainTopBlock {
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    color: $white;
+    background-color: $reload;
+  }
+}
